@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afreen Shah - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Afreen Shah</a>
+            <nav>
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#products">Products</a></li> <li><a href="#todo-app">My Notes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello, I'm Afreen Shah</h1>
+                    <p>A passionate Web Developer & Designer dedicated to crafting engaging and effective digital experiences.</p>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to my corner of the web! I'm Afreen, and I thrive on bringing ideas to life through code and creative design. My journey in web development began with a curiosity for how things work and has evolved into a passion for building intuitive, beautiful, and functional applications.</p>
+                        <p>I specialize in Frontend Development (React, Vue), Backend Development (Node.js, Python), and UI/UX Design. I'm a firm believer in continuous learning and always eager to explore new technologies to solve complex problems.</p>
+                        <p>When I'm not coding, you can find me exploring new cafes, reading sci-fi novels, or hiking new trails.</p>
+                        </div>
+                    <div class="about-skills">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React.js </li>
+                            <li>Node.js</li>
+                            <li>Teamwork/ Leadership</li>
+                            <li>Good Communication</li>
+                            <li>Responsive Design</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2>My Projects</h2>
+                <p class="section-description">Here's a selection of my recent work, showcasing my skills and passion for development.</p>
+                <div class="project-grid">
+                    <div class="project-card text-only">
+                        <img src="e_commerce.png" alt="Web Development Icon">
+                        <h3>E-commerce Website</h3>
+                        <p>A responsive online store with a seamless shopping experience.</p>
+                    </div>
+                    <div class="project-card text-only">
+                        <img src="fit.jpg" alt="Mobile App Icon">
+                        <h3>Mobile Fitness App</h3>
+                        <p>Track workouts and progress with this intuitive mobile application.</p>
+                    </div>
+                    <div class="project-card text-only">
+                        <img src="design.jpg" alt="Design Icon">
+                        <h3>UI/UX Redesign</h3>
+                        <p>Enhanced user interfaces for a cleaner and more engaging experience.</p>
+                    </div>
+                    <div class="project-card text-only">
+                        <img src="api.png" alt="API Icon">
+                        <h3>RESTful API Backend</h3>
+                        <p>Robust backend services for various web applications.</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="products" class="product-showcase-section section-padding">
+            <div class="container">
+                <h2>Product Showcase Demo</h2>
+                <p class="section-description">This section demonstrates dynamic data filtering and sorting capabilities.</p>
+                <div class="filters-sort-controls">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="books">Books</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-range">Price Range:</label>
+                        <input type="range" id="price-range" min="0" max="1000" value="1000">
+                        <span id="current-price-display">$1000</span>
+                    </div>
+                    <div class="sort-group">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by">
+                            <option value="default">Default</option>
+                            <option value="rating-desc">Rating (High to Low)</option>
+                            <option value="rating-asc">Rating (Low to High)</option>
+                            <option value="price-asc">Price (Low to High)</option>
+                            <option value="price-desc">Price (High to Low)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="product-list" class="product-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="todo-app" class="todo-app-section section-padding">
+            <div class="container">
+                <h2>My Personal Notes</h2>
+                <p class="section-description">A simple note-taking app to jot down ideas. Your notes are saved locally!</p>
+                <div class="todo-container">
+                    <input type="text" id="note-input" placeholder="Add a new note...">
+                    <button id="add-note-btn">Add Note</button>
+                    <ul id="note-list">
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-description">Have a question or want to collaborate? Feel free to reach out!</p>
+                <form class="contact-form" action="your-form-submission-endpoint" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="send-message-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <h3>Connect with me:</h3>
+                    <a href="https://www.linkedin.com/in/afreen-shah-687001292/" target="_blank" aria-label="LinkedIn"><img src="linkedIn.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Afreen-72" target="_blank" aria-label="GitHub"><img src="github.png" alt="GitHub"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Afreen Shah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
